@@ -1,0 +1,54 @@
+/*Geral*/
+body {
+  margin: 0;
+  background-color: rgb(208, 255, 239);
+}
+
+/*Conteúdo*/
+
+.main-game {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genius {
+  display: grid;
+  grid-template-areas: 'green red' 'yellow blue';
+  grid-gap: 10px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 700px;
+  height: 700px;
+}
+
+/*Área das Cores*/
+.blue {
+  grid-area: blue; /*Define em qual área a cor azul vai ficar*/
+  background-color: rgb(0, 140, 255);
+  border-bottom-right-radius: 100%; /*deixa a borda inferior direita arredondada*/
+}
+.red {
+  grid-area: red; /*Define em qual área a cor vermelha vai ficar*/
+  background-color: rgb(255, 0, 0);
+  border-top-right-radius: 100%; /*deixa a borda inferior direita arredondada*/
+}
+.yellow {
+  grid-area: yellow; /*Define em qual área a cor amarela vai ficar*/
+  background-color: rgb(229, 255, 0);
+  border-bottom-left-radius: 100%; /*deixa a borda inferior direita arredondada*/
+}
+.green {
+  grid-area: green; /*Define em qual área a cor verde vai ficar*/
+  background-color: rgb(43, 255, 0);
+  border-top-left-radius: 100%; /*deixa a borda inferior direita arredondada*/
+}
+
+/*Área selecionada*/
+
+.selected {
+  opacity: 0.5;
+}
